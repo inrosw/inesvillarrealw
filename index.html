@@ -5,6 +5,8 @@
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Inés Villarreal: poesía y física, laboratorio interactivo, ensayo filosófico y archivo de supervivencia." name="description"/>
 <title>Inés Villarreal — archivo de supervivencia</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%0A%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23101c35%22%2F%3E%0A%3Cpath%20d%3D%22M6%2032%20L18%2026%20L18%2038%20Z%22%20fill%3D%22%2362c8f4%22%2F%3E%0A%3Cpath%20d%3D%22M11%2032%20L22%2029%20L22%2035%20Z%22%20fill%3D%22%23fff0b5%22%2F%3E%0A%3Cpath%20d%3D%22M23%2025%20L18%2011%20L37%2025%20Z%22%20fill%3D%22%23ffb7d8%22%2F%3E%0A%3Cpath%20d%3D%22M23%2039%20L18%2053%20L37%2039%20Z%22%20fill%3D%22%23ffb7d8%22%2F%3E%0A%3Cpath%20d%3D%22M18%2029%20L33%2023%20L57%2032%20L33%2041%20L18%2035%20Z%22%20fill%3D%22%23faf7ec%22%20stroke%3D%22%23ffb7d8%22%20stroke-width%3D%222.7%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M31%2029%20Q39%2024%2047%2032%20Q39%2040%2031%2035%20Z%22%20fill%3D%22%232a789b%22%2F%3E%0A%3Cpath%20d%3D%22M49%2031%20L57%2032%20L49%2033%22%20fill%3D%22%23f6d573%22%2F%3E%0A%3C%2Fsvg%3E"/>
+
 <style>
 :root{--paper:#e7edf3;--black:#122f4b;--red:#4b7898;--yellow:#d6e7ef;--green:#9dbed1;--win:#c0c0c0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#56708a;color:var(--black);font:17px/1.55 Georgia,serif}a{color:#214c8c}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:2px dotted #000;outline-offset:2px}
@@ -740,6 +742,26 @@ section{border-color:#d0d0d0}
   .physics-scene[data-tone=propulsion] .landscape{animation:none!important}
 }
 
+
+/* Early Windows 95/98 / 2000-era system-dialog typography */
+.essay-document .coming-soon-retro{
+  font-family:Tahoma, "MS Sans Serif", Verdana, Arial, sans-serif;
+  font-size:clamp(29px,5vw,56px);
+  font-weight:700;
+  letter-spacing:.015em;
+  line-height:1.14;
+  color:#000080;
+  text-shadow:1px 1px 0 #fff;
+  margin:18px 0;
+}
+.essay-document .retro-cursor{
+  display:inline-block;
+  color:#555;
+  animation:retro-blink 1.1s steps(1,end) infinite;
+}
+@keyframes retro-blink{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.essay-document .retro-cursor{animation:none}}
+
 </style>
 </head>
 <body>
@@ -749,7 +771,7 @@ section{border-color:#d0d0d0}
 <div class="toolbar"><button class="toolbtn" onclick="history.back()" title="Back" type="button">←</button><span class="tool-label">Back</span><button class="toolbtn" onclick="history.forward()" title="Forward" type="button">→</button><button class="toolbtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Home" type="button">⌂</button><span class="tool-label">Home</span><span aria-hidden="true">▧</span><span class="tool-label">Poetry archive</span></div>
 <div class="addressbar"><label>Address</label><div class="url-field">https://inrosw.github.io/inesvillarrealllll/</div><button class="toolbtn go" onclick="document.getElementById('inicio').scrollIntoView()" type="button">Go</button></div>
 <div class="viewport">
-<header class="top"><a class="brand" href="#inicio">▣ INÉS VILLARREAL.EXE</a><nav aria-label="Archivos recuperados"><a href="#fisica">▤ Física &amp; Lírica</a><a href="#ensayo">▤ Ensayo.txt</a><a href="#publicaciones">▤ Publicaciones</a><a href="#cv">▤ About</a><a href="#resena">▤ Prensa</a><a href="#contacto">▤ Contacto</a></nav></header>
+<header class="top"><a class="brand" href="#inicio">▣ INÉS VILLARREAL.EXE</a><nav aria-label="Archivos recuperados"><a href="#fisica">▤ Laboratorio</a><a href="#ensayo">▤ Ensayo</a><a href="#publicaciones">▤ Publicaciones</a><a href="#cv">▤ About</a><a href="#resena">▤ Prensa</a><a href="#contacto">▤ Contacto</a></nav></header>
 <div class="signal"><span><span class="signal-dot"></span>CONEXIÓN INTERMITENTE / ESTACIÓN LITERARIA 001</span><strong>SEÑAL RESTABLECIDA · ARCHIVO ACCESIBLE</strong></div><div class="hero" id="inicio"><div class="hero-arcade" aria-hidden="true"><canvas id="hero-space" width="600" height="380"></canvas></div><h1>INÉS <i>VILLARREAL</i></h1><p class="hero-profession">Ingeniera de propulsión aeroespacial y escritora de poesía</p></div>
 <div class="marquee invitation-strip">INVITACIÓN A SUBIR A LA NAVE LÍTERO-CIENTÍFICA</div>
 
@@ -767,7 +789,7 @@ section{border-color:#d0d0d0}
  <div class="essay-menu">Archivo　 Edición　 Ver　 Ayuda</div>
  <div class="essay-document" style="min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px">
   <p class="essay-meta">INÉS VILLARREAL / ARTÍCULO EN PREPARACIÓN</p>
-  <h3 style="font-family:'Courier New',monospace;letter-spacing:.12em">COMING SOON</h3>
+  <h3 class="coming-soon-retro">COMING SOON<span class="retro-cursor" aria-hidden="true">_</span></h3>
  </div>
  <div class="essay-status">▣ Documento en preparación</div>
 </div>
